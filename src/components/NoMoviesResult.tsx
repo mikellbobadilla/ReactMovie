@@ -7,8 +7,8 @@ const messageStyles: Material = {
 
 export function NoMoviesResult() {
   return (
-    <Typography variant='h5' color='error.main' sx={messageStyles}>
-      No movies
+    <Typography variant='h6' color='error.main' sx={messageStyles}>
+      Movie not found
     </Typography>
   )
 }

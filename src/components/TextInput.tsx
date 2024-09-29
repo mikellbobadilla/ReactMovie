@@ -6,7 +6,7 @@ type TextInputProps = ComponentProps<typeof TextField>
 export function TextInput({ ...props }: TextInputProps) {
     return (
         <TextField
-            sx={{ width: '100%', }}
+            fullWidth
             type='search'
             variant="outlined"
             size="small"

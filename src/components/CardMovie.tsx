@@ -4,13 +4,13 @@ import { CardTitle } from "./CardTitle";
 
 export function CardMovie({ movie }: { movie: Movie }) {
   return (
-    <Grid2 size={{ xs: 1, sm: 1, lg: 1 }}>
+    <Grid2 size={1}>
       <Card elevation={0} sx={{ borderRadius: '0' }}>
         <CardActionArea href={movie.id} sx={{ overflow: 'hidden' }}>
           <CardMedia
             sx={{
               aspectRatio: '2/3',
-              borderRadius: '2px'
+              borderRadius: '5px'
             }}
             component={'img'}
             image={movie.poster}

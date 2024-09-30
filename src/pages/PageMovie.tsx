@@ -1,5 +1,4 @@
 import { Box, Card, CardMedia, CircularProgress, Stack, Typography } from '@mui/material'
-import movieResult from '../mocks/movie.json'
 import { SectionContainer } from '../components/SectionContainer'
 import { useParams } from 'react-router-dom'
 import { useMovie } from '../hooks/useMovie'

@@ -23,7 +23,7 @@ export function PageMovies() {
       getAllMovies(fieldText)
     }
 
-  }, [fieldText])
+  }, [fieldText, getAllMovies])
 
   return (
     <>

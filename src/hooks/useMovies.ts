@@ -22,14 +22,13 @@ export function useMovies() {
 
             const newMovies = await fetchMovies(movieName, 1)
             setMovies(newMovies)
-        } catch(error) {
+        } catch (error) {
+            toast.error("Cannot get all movies")
             if (error instanceof Error) {
-                toast.error("Hubo un problema al recuperar las peliculas")
                 setError(error.message)
                 throw new Error(error.message);
             } else {
                 setError(String(error))
-                throw new Error(String(error));
             }
         } finally {
             setIsLoading(false)
